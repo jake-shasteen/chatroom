@@ -1,0 +1,12 @@
+{
+  "name": "socket-chat-example",
+  "version": "0.0.1",
+  "description": "a tutorial socket.io app",
+  "repository": {
+  	"type": "git",
+  	"url": "git://github.com/jake-shasteen/chatroom.git"
+  }
+  "dependencies": {
+    "express": "^4.10.2"
+  }
+}
