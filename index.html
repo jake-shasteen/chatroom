@@ -12,7 +12,9 @@
           $( '.messages' ).append( $( '<li>' ).text( msg ) );
         };
         $( 'form' ).submit( function() {
-          socket.emit( 'chat message', $( '.m' ).val() );
+          var msg =$( '.m' ).val();
+          socket.emit( 'chat message', msg );
+          appendMessage( 'You sent: ' + msg );
           $( '.m' ).val( '' );
           return false;
         });
