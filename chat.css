@@ -28,11 +28,20 @@ form button {
 .messages { 
 	list-style-type: none; 
 	margin: 0; 
-	padding: 0; 
+	padding: 0;
+	position: relative;
+	overflow: auto;
 }
 .messages li { 
-	padding: 5px 10px; 
+	padding: 5px 10px;
+	clear: both;
+	float: left;
 }
 .messages li:nth-child(odd) { 
 	background: #eee; 
+}
+
+.messages li.ownMessage {
+	float: right;
+	clear: both;
 }
